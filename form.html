@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>:: Form ::</title>
+  </head>
+  <body>
+    <div class="career">
+      <h1>Career Object</h1>
+      <input type="text" name="career" value="" placeholder="enter your career object" id="career">
+    </div>
+    <div class="main">
+
+      <div class="sub">
+        <h1>Personal Information</h1>
+       <input type="text" name="name" value="" placeholder="enter your name" id="name"><br>
+       <input type="text" name="role" value="" placeholder="enter your role" id="role"><br>
+       <input type="number" name="phonenumber" value="" placeholder="enter your phone number" id="phonenumber"><br>
+       <input type="email" name="mailid" value="" placeholder="enter your mail id" id="mailid"><br>
+
+      </div>
+      <div class="sub">
+        <h1>Education Information</h1>
+        <select class="degree" name="degree" id="degree">
+          <option>--select your degree--</option>
+          <option>B.Tech</option>
+          <option>Degree</option>
+          <option>Others</option>
+        </select><br>
+        <input type="text" name="College" value="" placeholder="enter your college name" id="dcollege"><br>
+        <select class="branch" name="branch" id="dbranch"><br>
+          <option>--select your branch--</option><br>
+          <option>CSE</option>
+          <option>EEE</option>
+          <option>IT</option>
+          <option>ECE</option>
+          <option>MECH</option>
+          <option>CIVIL</option>
+        </select>
+        <input type="number" name="number" value="" placeholder="enter your marks" id="dmarks" ><br>
+
+      </div>
+      <div class="sub">
+        <h1>Intermediate Information</h1>
+        <select class="degree" name="degree" id="idegree">
+          <option>--select your degree--</option>
+          <option>Inter</option>
+          <option>Diploma</option>
+        </select><br>
+        <input type="text" name="College" value="" placeholder="enter your college name" id="icollege"><br>
+        <select class="branch" name="branch" id="ibranch"><br>
+          <option>--select your branch--</option><br>
+          <option>MPC</option>
+          <option>BIPC</option>
+          <option>MBIPC</option>
+          <option>MEC</option>
+          <option>CEC</option>
+          <option>HEC</option>
+          <option>CSE</option>
+          <option>EEE</option>
+          <option>IT</option>
+          <option>ECE</option>
+          <option>MECH</option>
+          <option>CIVIL</option>
+
+        </select>
+        <input type="number" name="number" value="" placeholder="enter your marks" id="imarks" ><br>
+
+      </div>
+      <div class="sub">
+        <h1>School Information</h1>
+        <select class="board" name="" id="board">
+          <option>--select your board--</option><br>
+          <option>SSC</option>
+          <option>ICSE</option>
+          <option>CBSE</option>
+
+        </select>
+        <input type="text" name="schoolname" value="" placeholder="enter your schoolname" id="school"><br>
+        <select class="medium" name="" id="medium"><br>
+          <option>--select your medium--</option>
+          <option>TELUGU</option>
+          <option>ENGLISH</option>
+          <option>HINDI</option>
+          <option>OTHERS</option>
+        </select>
+        <input type="number" name="marks" value="" placeholder="enter your marks" id="smarks">
+
+      </div>
+      <div class="sub">
+        <h1>Skills</h1>
+        <input type="text" name="skills" value="" placeholder="enter your skills" id="skills">
+
+      </div>
+    </div>
+<button type="button" name="button" onclick="submit();">Submit</button>
+  </body>
+  <script type="text/javascript" src="store.js">
+
+  </script>
+</html>
