@@ -19,10 +19,15 @@ header{
   padding: 1%;
   text-align: center;
   border: 3px solid #000000;
-  box-shadow: 1px 1px 1px 1px #7F8C8D  ;
+  box-shadow: 1px 1px 1px #7F8C8D  ;
 }
 .Career input{
   width:80%;
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+
 }
 .sub{
   width: 40%;
@@ -31,7 +36,7 @@ header{
   padding: 1%;
   text-align: center;
   border: 3px solid #000000;
-  box-shadow: 1px 1px 1px 1px #7F8C8D  ;
+  box-shadow: 1px 1px 1px #7F8C8D  ;
 }
 .sub input, .sub select{
   width: 90%;
@@ -58,7 +63,7 @@ button{
 .card{
   background: white;
   width: 40%;
-  box-shadow: 2px 2px 2px 2px #7F8C8D ;
+  box-shadow: 2px 2px 2px #7F8C8D ;
   margin:1%;
   text-align: center;
   padding: 1%;
@@ -68,18 +73,84 @@ img{
   width: 100%;
 
 }
-.main{
-  display: flex;
-  width: 100%;
-  justify-content:space-between;
-}
+
 .left{
-  width: 20%;
+  width: 30%;
+  padding: 1%;
   background: #D7BDE2 ;
-  box-shadow: 2px 2px 2px 2px #7F8C8D;
+  box-shadow: 2px 2px 2px #7F8C8D;
 }
 .right{
-  width: 79%;
+  padding: 1%;
+  margin: 1%;
   background: #A3E4D7;
-  box-shadow: 2px 2px 2px 2px #7F8C8D;
+  box-shadow: 2px 2px 2px #7F8C8D;
+}
+@media screen and (min-width:320px) and (max-width:480px){
+  .cards, .main{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  .card, .sub{
+    width: 93%;
+
+  }
+  .career{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .left{
+    width: 90%;
+    text-align: center;
+  }
+  .right{
+    width: 90%;
+    text-align: center;
+  }
+
+}
+@media screen and (min-width:481px) and (max-width:800px){
+  .cards, .main{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card{
+    width: 43%;
+  }
+  .sub{
+    width: 93%;
+  }
+  .career, .main{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .button{
+    margin-left: 45%;
+  }
+
+
+}
+@media screen and (min-width:801px) and (max-width:1500px){
+  .cards{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card{
+    width: 28%;
+  }
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .left{
+    width: 30%;
+  }
+  .right{
+    width:65%;
+  }
+
 }

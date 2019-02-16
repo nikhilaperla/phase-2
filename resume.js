@@ -58,8 +58,8 @@ console.log(a);
     var career=document.createElement("h1");
     career.textContent="Career Object";
     right.appendChild(career);
-    var hr=document.createElement("hr");
-        career.appendChild(hr);
+    // var hr=document.createElement("hr");
+    //     career.appendChild(hr);
     var p=document.createElement("p");
     p.textContent=profile.co;
     right.appendChild(p);
@@ -68,8 +68,8 @@ function Edu(edu) {
   var education=document.createElement("h1");
   education.textContent="Education Information";
   right.appendChild(education);
-  var hr=document.createElement("hr");
-      education.appendChild(hr);
+  // var hr=document.createElement("hr");
+  //     education.appendChild(hr);
       for(i in edu) {
 
         var degree=document.createElement("h3");
