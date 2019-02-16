@@ -37,14 +37,38 @@ function submit() {
     result=e.target.result;
     var tx=result.transaction("resume","readwrite");
     store=tx.objectStore("resume");
-    store.put(
-      {
-        co:career
-      }
-    );
+    store.put({
+        co:career,
+        Name:name,
+        Role:role,
+        Num:phonenumber,
+        Mail:mailid,
+        Education:[
+          {
+            Degree:degree,
+            College:dcollege,
+            Branch:dbranch,
+            Marks:dmarks
+          },
+          {
+            Degree:idegree,
+            College:icollege,
+            Branch:ibranch,
+            Marks:imarks
+          },
+          {
+            Degree:board,
+            College:school,
+            Branch:medium,
+            Marks:smarks
+          }
+        ],
+        skills:skills
+      });
     }
     //error
     request.onerror=function(e){
       console.log("error"+e);
 }
+window.open("index.html","_self");
 }

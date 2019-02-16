@@ -5,19 +5,13 @@ header{
   font-weight: bold;
   text-align: center;
 }
-a {
+.a {
   font-size: 53px;
   margin-left: 80%;
 
 }
 /* form stylesheet */
-.main{
-  display: flex;
-  flex-wrap: wrap;
-  width: 90%;
-  text-align: center;
-  justify-content: space-around;
-}
+
 .career{
   width: 90%;
   background-color: #A3E4D7  ;
@@ -26,6 +20,9 @@ a {
   text-align: center;
   border: 3px solid #000000;
   box-shadow: 1px 1px 1px 1px #7F8C8D  ;
+}
+.Career input{
+  width:80%;
 }
 .sub{
   width: 40%;
@@ -49,6 +46,40 @@ button{
   padding: 1%;
   background-color: #999999;
   margin-left: 43%;
+}
+/*desining styles for the card*/
+.cards{
+  width: 100%;
+  background: #acd;
+  display:flex;
+  flex-wrap: wrap;
+  padding: 1%;
+}
+.card{
+  background: white;
+  width: 40%;
+  box-shadow: 2px 2px 2px 2px #7F8C8D ;
+  margin:1%;
+  text-align: center;
+  padding: 1%;
+  justify-content: space-between;
+}
+img{
+  width: 100%;
 
-
+}
+.main{
+  display: flex;
+  width: 100%;
+  justify-content:space-between;
+}
+.left{
+  width: 20%;
+  background: #D7BDE2 ;
+  box-shadow: 2px 2px 2px 2px #7F8C8D;
+}
+.right{
+  width: 79%;
+  background: #A3E4D7;
+  box-shadow: 2px 2px 2px 2px #7F8C8D;
 }
